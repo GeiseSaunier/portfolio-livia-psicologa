@@ -1,0 +1,11 @@
+# Arquivos do sistema
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editores
+.vscode/
+.idea/
+
+# Netlify CLI (se usar)
+.netlify/

@@ -1,0 +1,166 @@
+/* =========================================================
+   Base: cores, fontes, reset e navegação
+   ========================================================= */
+
+:root {
+  --petrol: #16363a;
+  --petrol-soft: #2c5257;
+  --teal: #3e7c78;
+  --sage: #eef1ec;
+  --mist: #dde5e1;
+  --lilac: #d9cdea;
+  --lilac-soft: #ede6f5;
+  --violet: #6e4f9e;
+  --stone: #7c8c88;
+  --ink: #1c2b2d;
+  --muted: #435654;
+  --white: #fbfcfa;
+  --serif: "Gloock", Georgia, "Times New Roman", serif;
+  --sans: "Figtree", "Segoe UI", system-ui, -apple-system, sans-serif;
+  --max: 1160px;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  background: var(--sage);
+  color: var(--ink);
+  font-family: var(--sans);
+  font-size: 1.125rem;
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+}
+a {
+  color: inherit;
+}
+img,
+svg {
+  max-width: 100%;
+}
+:focus-visible {
+  outline: 2px solid var(--violet);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+.wrap {
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 0 clamp(1.25rem, 4vw, 2.5rem);
+}
+h2,
+h3 {
+  font-weight: 400;
+}
+
+/* Navegação */
+header.top {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  background: rgba(238, 241, 236, 0.9);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.3s;
+}
+header.top.scrolled {
+  border-bottom-color: var(--mist);
+}
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 70px;
+}
+.mark {
+  font-family: var(--serif);
+  font-size: 1.4rem;
+  text-decoration: none;
+  color: var(--petrol);
+}
+.nav ul {
+  display: flex;
+  gap: clamp(0.9rem, 2.4vw, 1.9rem);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.nav ul a {
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--muted);
+  padding: 0.3rem 0;
+  border-bottom: 2px solid transparent;
+  transition:
+    color 0.2s,
+    border-color 0.2s;
+}
+.nav ul a:hover,
+.nav ul a.active {
+  color: var(--petrol);
+  border-bottom-color: var(--violet);
+}
+.nav ul {
+  align-items: center;
+}
+.nav ul .nav-cta {
+  font: inherit;
+  font-size: 1rem;
+  font-weight: 600;
+  background: var(--petrol);
+  color: var(--white);
+  padding: 0.45rem 1.05rem;
+  border-radius: 999px;
+  border: 0;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.nav ul .nav-cta:hover {
+  background: var(--violet);
+}
+button[data-go] {
+  -webkit-appearance: none;
+  appearance: none;
+  cursor: pointer;
+}
+button.btn {
+  font-family: inherit;
+  line-height: inherit;
+}
+#psi-formulario {
+  scroll-margin-top: 90px;
+}
+button.mark {
+  background: none;
+  border: 0;
+  padding: 0;
+}
+button.text-link {
+  border: 0;
+  font: inherit;
+  font-weight: 700;
+  padding: 0 0 3px;
+  background-color: transparent;
+}
+button.back {
+  background: none;
+  border: 0;
+  padding: 0;
+  font-family: inherit;
+}
+button.therapy-link {
+  background: none;
+  border-width: 1px 0 0;
+  border-style: solid;
+  border-color: var(--petrol-soft);
+  width: 100%;
+  text-align: left;
+  padding: 1.4rem 0 0;
+}

@@ -1,0 +1,11 @@
+# Configuração do Netlify
+# O site é estático: não há etapa de build, o Netlify publica os arquivos da raiz.
+
+[build]
+  publish = "."
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"

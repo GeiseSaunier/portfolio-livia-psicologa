@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lívia Barbosa de Oliveira | Psicóloga CRP 20/14387</title>
+<meta name="description" content="Lívia Barbosa de Oliveira, psicóloga (CRP 20/14387), pós-graduanda em Terapia Cognitivo-Comportamental.">
+<meta property="og:title" content="Lívia Barbosa de Oliveira | Psicóloga">
+<meta property="og:description" content="Psicóloga, CRP 20/14387. Pós-graduanda em Terapia Cognitivo-Comportamental.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#16363A">
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gloock&family=Figtree:wght@400;500;600;700&family=Parisienne&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/portfolio.css">
+<link rel="stylesheet" href="css/psicoterapia.css">
+<link rel="stylesheet" href="css/interacoes.css">
+</head>
+<body>
+
+<!-- ===== CABEÇALHO E MENUS (portfólio e psicoterapia) ===== -->
+<header class="top" id="topo">
+  <nav class="wrap nav nav-main" aria-label="Principal">
+    <a href="#inicio" class="mark">Lívia Barbosa</a>
+    <ul>
+      <li><a href="#sobre">Sobre</a></li>
+      <li><a href="#formacao">Formação</a></li>
+      <li><a href="#contato">Contato</a></li>
+      <li><button type="button" class="nav-cta" data-go="psicoterapia">Psicoterapia</button></li>
+    </ul>
+  </nav>
+  <nav class="wrap nav nav-psi" aria-label="Psicoterapia" hidden>
+    <button type="button" class="mark" data-go="inicio">Lívia Barbosa</button>
+    <div class="nav-right">
+      <button type="button" class="back" data-go="inicio"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg><span>Portfólio</span></button>
+      <button type="button" class="btn btn-primary btn-sm" data-open-form>Formulário<span class="hide-sm">&nbsp;de interesse</span></button>
+    </div>
+  </nav>
+  <div class="psi-progress" hidden><span></span></div>
+</header>
+
+<!-- ===== PORTFÓLIO ===== -->
+<main id="inicio">
+  <div class="wrap hero">
+    <div>
+      <p class="kicker">Psicóloga</p>
+      <h1><span class="first">Lívia</span><span class="last">Barbosa de Oliveira</span></h1>
+      <p class="lead">Psicóloga clínica e pós-graduanda em Terapia Cognitivo-Comportamental. Um espaço de escuta, acolhimento e cuidado.</p>
+      <ul class="modes" aria-label="Modalidade de atendimento">
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="6" width="13" height="12" rx="2"/><path d="m16 10 5-3v10l-5-3"/></svg>Atendimento on-line, via Google Meet</li>
+      </ul>
+      <div class="actions">
+        <button type="button" class="btn btn-primary" data-go="psicoterapia" data-target="psi-formulario">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="3" width="14" height="18" rx="2"/><path d="M9 8h6M9 12h6M9 16h3"/></svg>
+          Quero começar a terapia
+        </button>
+        <button type="button" class="text-link" data-go="psicoterapia">Conhecer a psicoterapia</button>
+      </div>
+    </div>
+
+    <div class="portrait">
+      <figure class="arch" aria-hidden="true">
+        <div class="blot">
+          <svg viewBox="0 0 400 400" role="presentation">
+            <defs>
+              <g id="halfShape">
+                <path fill="#16363A" d="M201,34 C176,44 152,70 160,106 C128,84 84,94 70,134 C56,176 92,196 122,182 C88,206 54,248 84,284 C106,308 140,290 152,262 C148,300 168,342 201,366 Z"/>
+                <path fill="#6E4F9E" opacity=".85" d="M201,118 C184,124 170,140 176,164 C150,160 124,176 128,200 C132,222 160,226 174,214 C164,240 170,268 201,286 Z"/>
+                <path fill="#D9CDEA" d="M201,176 C192,180 186,190 190,204 C182,210 182,224 192,230 C196,232 198,236 201,240 Z"/>
+                <circle cx="104" cy="88" r="7" fill="#16363A"/>
+                <circle cx="52" cy="214" r="10" fill="#6E4F9E"/>
+                <circle cx="40" cy="236" r="4" fill="#16363A"/>
+                <circle cx="140" cy="334" r="6" fill="#16363A"/>
+                <circle cx="118" cy="320" r="3" fill="#6E4F9E"/>
+              </g>
+            </defs>
+            <g class="half"><use href="#halfShape"/></g>
+            <g class="half"><g transform="translate(400,0) scale(-1,1)"><use href="#halfShape"/></g></g>
+          </svg>
+        </div>
+      </figure>
+      <button type="button" class="blot-ask" aria-expanded="false" aria-controls="blotQuiz">O que você vê?</button>
+      <div class="blot-quiz" id="blotQuiz" hidden>
+        <p class="bq-title">O que você vê nesta imagem?</p>
+        <div class="bq-options">
+          <button type="button" data-see="uma borboleta">Uma borboleta</button>
+          <button type="button" data-see="uma flor">Uma flor</button>
+          <button type="button" data-see="um rosto">Um rosto</button>
+          <button type="button" data-see="outra coisa">Outra coisa</button>
+        </div>
+        <div class="bq-answer" aria-live="polite"></div>
+        <button type="button" class="bq-close" aria-label="Fechar">×</button>
+      </div>
+      <div class="float-card">
+        <span class="fc-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8M12 16v4"/></svg></span>
+        <span><small>Atendimento</small><strong>On-line, de onde você estiver</strong></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== Portfólio: credenciais (CRP, abordagem, graduação, atendimento) ===== -->
+  <div class="wrap">
+    <div class="creds" aria-label="Dados profissionais">
+      <div class="seal">
+        <svg viewBox="0 0 200 200" aria-hidden="true">
+          <defs><path id="ring" d="M100,100 m-76,0 a76,76 0 1,1 152,0 a76,76 0 1,1 -152,0"/></defs>
+          <circle cx="100" cy="100" r="96" fill="none" stroke="#D9CDEA" stroke-opacity=".5"/>
+          <circle cx="100" cy="100" r="62" fill="#D9CDEA" fill-opacity=".08" stroke="#D9CDEA" stroke-opacity=".3"/>
+          <text class="ring-text"><textPath href="#ring" textLength="470" lengthAdjust="spacing">REGISTRO PROFISSIONAL ✦ PSICÓLOGA ✦ </textPath></text>
+        </svg>
+        <div class="seal-center"><small>CRP</small><strong>20/14387</strong></div>
+      </div>
+      <ul class="cred-list">
+        <li class="cred">
+          <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3a6 6 0 0 0-6 6c0 1.6.6 2.6 1.4 3.6.7.9.6 1.9.6 3.4h8c0-1.5-.1-2.5.6-3.4C17.4 11.6 18 10.6 18 9a6 6 0 0 0-6-6Z"/><path d="M9.5 19h5M10.5 21.5h3"/></svg></span>
+          <div><p class="k">Abordagem</p><p class="v">Terapia Cognitivo-Comportamental<span>Especialização em andamento</span></p></div>
+        </li>
+        <li class="cred">
+          <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m2 9 10-5 10 5-10 5L2 9Z"/><path d="M6 11v5c2 2 10 2 12 0v-5"/><path d="M22 9v5"/></svg></span>
+          <div><p class="k">Graduação</p><p class="v">Psicologia<span>Centro Universitário Fametro, 2026</span></p></div>
+        </li>
+        <li class="cred">
+          <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8M12 16v4"/></svg></span>
+          <div><p class="k">Atendimento</p><p class="v">On-line<span>Via Google Meet, de onde você estiver</span></p></div>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- ===== Portfólio: Sobre ===== -->
+  <section id="sobre">
+    <div class="wrap">
+      <div class="sec-head about-head"><h2>Sobre</h2></div>
+
+      <figure class="about-quote">
+        <span class="qmark" aria-hidden="true">“</span>
+        <blockquote>Acredito numa psicologia feita de escuta atenta, acolhimento e responsabilidade com cada história.</blockquote>
+        <figcaption class="signature"><span><strong>Lívia Barbosa de Oliveira</strong><small>Psicóloga, CRP 20/14387</small></span></figcaption>
+      </figure>
+
+      <svg class="ornament" viewBox="0 0 80 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" aria-hidden="true">
+        <path d="M2 12h22M56 12h22"/>
+        <path d="M40 3c-4 2-6 5-5 9-3-2-7-1-8 1 3 2 6 2 8 0-1 4 1 6 5 8 4-2 6-4 5-8 2 2 5 2 8 0-1-2-5-3-8-1 1-4-1-7-5-9Z"/>
+      </svg>
+
+      <div class="about-body">
+        <div>
+          <p class="intro">Sou psicóloga formada pelo Centro Universitário Fametro e pós-graduanda em Terapia Cognitivo-Comportamental. Minha trajetória passou pelo acolhimento psicológico, pela condução de grupos terapêuticos e pela atuação em contexto institucional, experiências que fortaleceram minha comunicação com públicos diversos e o manejo cuidadoso de situações sensíveis.</p>
+        </div>
+        </div>
+      </div>
+
+      <div class="pillars">
+        <div class="pillar">
+          <span class="p-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true"><path d="M7 10a5 5 0 0 1 10 0c0 3-3 3.5-3 6.5a2.5 2.5 0 0 1-5 0"/><path d="M10 10a2 2 0 0 1 4 0"/></svg></span>
+          <h3>Escuta atenta</h3>
+          <p>Um espaço seguro para falar sem julgamentos.</p>
+        </div>
+        <div class="pillar">
+          <span class="p-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10Z"/></svg></span>
+          <h3>Acolhimento</h3>
+          <p>Cuidado e respeito com o momento de cada pessoa.</p>
+        </div>
+        <div class="pillar">
+          <span class="p-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 3h6M10 3v6l-5 9a2 2 0 0 0 1.8 3h10.4a2 2 0 0 0 1.8-3l-5-9V3"/><path d="M7.5 15h9"/></svg></span>
+          <h3>Base científica</h3>
+          <p>Práticas fundamentadas na Terapia Cognitivo-Comportamental.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Portfólio: Formação ===== -->
+  <section id="formacao">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>Formação</h2>
+        <p>Graduação concluída e especialização em andamento na abordagem cognitivo-comportamental.</p>
+      </div>
+      <ol class="edu">
+        <li class="edu-item done">
+          <span class="edu-node" aria-hidden="true"></span>
+          <span class="edu-year">2026</span>
+          <h3>Bacharelado em Psicologia</h3>
+          <p>Centro Universitário Fametro</p>
+          <p class="edu-status">Concluído em junho de 2026</p>
+        </li>
+        <li class="edu-item going">
+          <span class="edu-node" aria-hidden="true"></span>
+          <span class="edu-year">Atual</span>
+          <h3>Pós-graduação em Terapia Cognitivo-Comportamental</h3>
+          <p>Especialização</p>
+          <p class="edu-status">Em andamento</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ===== Portfólio: Contato ===== -->
+  <section id="contato">
+    <div class="wrap contact">
+      <div>
+        <h2>Vamos conversar</h2>
+        <p class="intro">Para começar a terapia, preencha o formulário de interesse. Para outras dúvidas, use os contatos ao lado.</p>
+        <button type="button" class="btn btn-primary" data-go="psicoterapia" data-target="psi-formulario">Preencher formulário de interesse</button>
+        <button type="button" class="therapy-link" data-go="psicoterapia">
+          <span><small>Pensando em começar a terapia?</small>Conheça como funciona a psicoterapia</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </button>
+      </div>
+      <div class="contact-cards">
+        <a class="contact-card" href="https://wa.me/559284075979" target="_blank" rel="noopener">
+          <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg></span>
+          <span><span class="label">Telefone e WhatsApp</span><span class="value">(92) 98407-5979</span></span>
+        </a>
+        <a class="contact-card" href="mailto:liviabarbosa.psi@outlook.com">
+          <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></span>
+          <span><span class="label">E-mail</span><span class="value">liviabarbosa.psi@outlook.com</span></span>
+        </a>
+        <div class="contact-card">
+          <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3 4 6v6c0 4.5 3.4 8 8 9 4.6-1 8-4.5 8-9V6l-8-3Z"/><path d="m9 12 2 2 4-4"/></svg></span>
+          <span><span class="label">Registro profissional</span><span class="value">CRP 20/14387</span></span>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- ===== PSICOTERAPIA (aparece ao clicar em "Psicoterapia") ===== -->
+<div id="psicoterapia" class="view" hidden>
+  <!-- ===== Psicoterapia: abertura ===== -->
+  <section class="opening">
+    <div class="wrap">
+      <p class="kicker">Psicoterapia</p>
+      <h1>Um espaço para entender o que você sente e o que está <em>por trás disso.</em></h1>
+      <div class="actions">
+        <button type="button" class="btn btn-primary" data-go="psicoterapia" data-target="psi-formulario">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="3" width="14" height="18" rx="2"/><path d="M9 8h6M9 12h6M9 16h3"/></svg>
+          Preencher formulário
+        </button>
+        <a class="text-link" href="#psi-ola">Conhecer a terapia</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Psicoterapia: apresentação ===== -->
+  <section id="psi-ola">
+    <div class="wrap hello">
+      <div class="hello-card reveal">
+        <span class="script">Olá, eu sou a Lívia :)</span>
+        <p>Psicóloga clínica</p>
+        <small>CRP 20/14387</small>
+      </div>
+      <div class="hello-text reveal">
+        <p class="lead">Acredito na terapia como um espaço de acolhimento, escuta e construção.</p>
+        <p>Um espaço para olhar para si com mais atenção, compreender o que está por trás de alguns pensamentos, emoções e comportamentos e, a partir disso, encontrar novas possibilidades.</p>
+        <div class="note">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3a6 6 0 0 0-6 6c0 1.6.6 2.6 1.4 3.6.7.9.6 1.9.6 3.4h8c0-1.5-.1-2.5.6-3.4C17.4 11.6 18 10.6 18 9a6 6 0 0 0-6-6Z"/><path d="M9.5 19h5M10.5 21.5h3"/></svg>
+          <span>Minha atuação é baseada na Terapia Cognitivo-Comportamental (TCC), área que venho aprofundando por meio da minha pós-graduação.</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+ <!-- ===== Psicoterapia: atendimento on-line ===== -->
+ <section id="psi-modalidades">
+    <div class="wrap">
+      <div class="mod-head reveal">
+        <p class="kicker">Modalidade</p>
+        <h2>Atendimento on-line</h2>
+        <p>Terapia por videochamada, de onde você estiver.</p>
+      </div>
+      <div class="mod-grid">
+        <article class="mod-card reveal">
+          <span class="mod-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 11 12 4l9 7"/><path d="M5 10v10h14V10"/><path d="M10 20v-5h4v5"/></svg></span>
+          <h3>De onde você estiver</h3>
+          <p>Sem deslocamento: basta um lugar reservado e uma boa conexão.</p>
+        </article>
+        <article class="mod-card reveal">
+          <span class="mod-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="6" width="13" height="12" rx="2"/><path d="m16 10 5-3v10l-5-3"/></svg></span>
+          <h3>Por videochamada</h3>
+          <p>As sessões acontecem pelo Google Meet.</p>
+        </article>
+        <article class="mod-card reveal">
+          <span class="mod-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3 4 6v6c0 4.5 3.4 8 8 9 4.6-1 8-4.5 8-9V6l-8-3Z"/><path d="m9 12 2 2 4-4"/></svg></span>
+          <h3>Com o mesmo cuidado</h3>
+          <p>O sigilo e a atenção ao seu processo são os mesmos de um atendimento presencial.</p>
+        </article>
+      </div>
+      <div class="mod-cta reveal"><button type="button" class="btn btn-primary" data-open-form>Quero começar</button></div>
+    </div>
+  </section>
+
+  <!-- ===== Psicoterapia: a terapia não precisa ter todas as respostas ===== -->
+ <section id="psi-processo">
+    <div class="wrap split">
+      <h2 class="reveal">A terapia não precisa ser sobre ter todas as respostas.</h2>
+      <div class="reveal">
+        <p>Às vezes, é sobre conseguir olhar para aquilo que está acontecendo com mais clareza.</p>
+        <p>Entender padrões que se repetem, reconhecer pensamentos que influenciam a forma como você se sente e encontrar maneiras diferentes de lidar com algumas situações.</p>
+        <p class="pull">A terapia é um processo construído a partir de quem você é, daquilo que você vive e do que faz sentido para você.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Psicoterapia: TCC e exercício "Experimente" ===== -->
+  <section id="psi-tcc">
+    <div class="wrap">
+      <div class="tcc-head reveal">
+        <p class="kicker">A Terapia Cognitivo-Comportamental</p>
+        <h2>Entender o que acontece dentro de você também pode mudar a forma como você vive.</h2>
+      </div>
+      <div class="tcc">
+        <div class="reveal">
+          <p>A TCC parte da ideia de que existe uma relação entre aquilo que pensamos, sentimos e fazemos.</p>
+          <p>Às vezes, determinados pensamentos aparecem tão automaticamente que nem percebemos o quanto eles influenciam nossas emoções e nossas escolhas.</p>
+          <p>Na terapia, vamos olhar para esses padrões com mais atenção.</p>
+        </div>
+        <figure class="model reveal">
+          <svg viewBox="0 0 420 370" role="img" aria-labelledby="modelTitle">
+            <title id="modelTitle">Relação entre pensamentos, emoções e comportamentos</title>
+            <defs>
+              <marker id="ah" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 1L9 5L0 9z" fill="#6E4F9E"/></marker>
+            </defs>
+            <circle cx="210" cy="215" r="112" fill="none" stroke="#6E4F9E" stroke-opacity=".16"/>
+            <circle cx="210" cy="215" r="160" fill="none" stroke="#6E4F9E" stroke-opacity=".07"/>
+            <g fill="none" stroke="#16363A" stroke-opacity=".45" stroke-width="1.2" marker-start="url(#ah)" marker-end="url(#ah)">
+              <path d="M178 128 Q132 170 116 236"/>
+              <path d="M242 128 Q288 170 304 236"/>
+              <path d="M152 312 Q210 340 268 312"/>
+            </g>
+            <circle cx="210" cy="72" r="58" fill="#16363A"/>
+            <text x="210" y="72" text-anchor="middle" class="lbl" style="fill:#FBFCFA">Pensar</text>
+            <text x="210" y="92" text-anchor="middle" class="sub" style="fill:#D9CDEA">pensamentos</text>
+            <circle cx="92" cy="290" r="58" fill="#EDE6F5" stroke="#6E4F9E" stroke-opacity=".4"/>
+            <text x="92" y="290" text-anchor="middle" class="lbl">Sentir</text>
+            <text x="92" y="310" text-anchor="middle" class="sub">emoções</text>
+            <circle cx="328" cy="290" r="58" fill="#FBFCFA" stroke="#16363A" stroke-opacity=".35"/>
+            <text x="328" y="290" text-anchor="middle" class="lbl">Fazer</text>
+            <text x="328" y="310" text-anchor="middle" class="sub">comportamentos</text>
+            <circle cx="210" cy="222" r="5" fill="#6E4F9E"/>
+          </svg>
+          <figcaption>O que pensamos, sentimos e fazemos se influencia mutuamente.</figcaption>
+        </figure>
+      </div>
+      <p class="highlight reveal">Não para buscar uma forma “certa” de pensar, mas para <span>compreender, questionar e construir novas possibilidades.</span></p>
+      <div class="try reveal">
+        <div class="try-head">
+          <p class="kicker">Experimente</p>
+          <h3>Como um pensamento muda o resto</h3>
+          <p>Escolha uma situação e veja como pensar, sentir e fazer se conectam.</p>
+        </div>
+        <div class="try-tabs" role="tablist" aria-label="Situações">
+          <button type="button" role="tab" aria-selected="true" data-sit="0">Mensagem sem resposta</button>
+          <button type="button" role="tab" aria-selected="false" data-sit="1">Uma crítica no trabalho</button>
+          <button type="button" role="tab" aria-selected="false" data-sit="2">Apresentação amanhã</button>
+        </div>
+        <div class="chain" aria-live="polite">
+          <div class="link"><span class="lk">Situação</span><p data-f="sit"></p></div>
+          <div class="link"><span class="lk">Pensamento</span><p data-f="th"></p></div>
+          <div class="link"><span class="lk">Emoção</span><p data-f="em"></p></div>
+          <div class="link"><span class="lk">Comportamento</span><p data-f="be"></p></div>
+        </div>
+        <div class="try-foot">
+          <button type="button" class="reframe" aria-pressed="false"><span class="rf-dot"></span><span class="rf-label">E se eu olhasse de outro jeito?</span></button>
+          <p class="try-note">Exemplos ilustrativos. Na terapia, olhamos para as situações da sua vida, no seu ritmo.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== Psicoterapia: "Nem tudo que você pensa é um fato" e cartões ===== -->
+  <section class="thought">
+    <div class="wrap">
+      <h2 class="script reveal">Nem tudo que você pensa é um fato.</h2>
+      <p class="reveal">Nossos pensamentos podem parecer verdades absolutas quando estamos vivendo determinadas situações. A terapia pode ajudar a olhar para eles com mais distância, entender de onde vêm e perceber outras possibilidades.</p>
+      <div class="flip-intro reveal"><span>Pensamento ou fato?</span> Toque nos cartões.</div>
+      <div class="flips">
+        <button type="button" class="flip reveal" aria-pressed="false">
+          <span class="face f-front"><span class="q">“</span>Eu sempre estrago tudo.<small>Toque para virar</small></span>
+          <span class="face f-back"><strong>É um pensamento.</strong>Palavras como “sempre” e “nunca” costumam deixar de fora tudo o que deu certo.</span>
+        </button>
+        <button type="button" class="flip reveal" aria-pressed="false">
+          <span class="face f-front"><span class="q">“</span>Todo mundo percebeu o meu nervosismo.<small>Toque para virar</small></span>
+          <span class="face f-back"><strong>É um pensamento.</strong>Talvez algumas pessoas tenham notado, talvez nenhuma. Não dá para ter certeza.</span>
+        </button>
+        <button type="button" class="flip reveal" aria-pressed="false">
+          <span class="face f-front"><span class="q">“</span>Se eu errar, vai ser um desastre.<small>Toque para virar</small></span>
+          <span class="face f-back"><strong>É um pensamento.</strong>Erros acontecem, e quase sempre existe uma forma de lidar com eles.</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Psicoterapia: Antes de mudar, é preciso compreender ===== -->
+  <section class="understand">
+    <div class="wrap">
+      <h2 class="reveal">Antes de mudar, é preciso compreender.</h2>
+      <p class="intro reveal">Compreender o que você…</p>
+      <ul class="verbs reveal">
+        <li><button type="button" data-q="O que você tem sentido com mais frequência?"><span>sente</span><small>emoções</small></button></li>
+        <li><button type="button" data-q="Que pensamentos aparecem quando algo não sai como você esperava?"><span>pensa</span><small>pensamentos</small></button></li>
+        <li><button type="button" data-q="Existe alguma situação que parece se repetir na sua vida?"><span>repete</span><small>padrões</small></button></li>
+        <li><button type="button" data-q="O que tem pesado para você ultimamente?"><span>carrega</span><small>histórias</small></button></li>
+      </ul>
+      <p class="verb-prompt" aria-live="polite"><span class="vp-hint">Toque em uma palavra.</span></p>
+      <p class="closing reveal">A terapia é um espaço para olhar para tudo isso com mais cuidado, desenvolver novos entendimentos e encontrar formas diferentes de se relacionar consigo e com a própria vida.</p>
+    </div>
+  </section>
+
+  <!-- ===== Psicoterapia: pausa para respirar ===== -->
+  <section id="psi-pausa">
+    <div class="wrap pause reveal">
+      <div class="pause-text">
+        <p class="kicker">Uma pausa para você</p>
+        <h2>Antes de seguir, respire um pouco.</h2>
+        <p>Um minuto só seu. Acompanhe o círculo: inspire enquanto ele cresce e solte o ar enquanto ele diminui.</p>
+        <button type="button" class="btn btn-primary breath-btn">Começar a pausa</button>
+        <p class="pause-done" aria-live="polite"></p>
+      </div>
+      <div class="breath" aria-hidden="true">
+        <span class="ring r1"></span><span class="ring r2"></span>
+        <span class="orb"><span class="breath-label">Pronto?</span></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Psicoterapia: formulário de interesse ===== -->
+  <section class="cta" id="psi-formulario">
+    <div class="wrap">
+      <div class="cta-box reveal">
+        <p class="kicker">Formulário de interesse</p>
+        <h2>Vamos começar?</h2>
+        <p>Começar a terapia também é abrir um espaço para olhar com mais cuidado para o que você tem vivido, sentido e pensado. Este formulário é o primeiro passo para eu conhecer um pouco sobre você.</p>
+
+        <ul class="form-facts">
+          <li>
+            <span class="ff-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></svg></span>
+            <span><strong>Poucos minutos</strong>8 perguntas simples</span>
+          </li>
+          <li>
+            <span class="ff-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="6" width="13" height="12" rx="2"/><path d="m16 10 5-3v10l-5-3"/></svg></span>
+            <span><strong>On-line</strong>via Google Meet</span>
+          </li>
+          <li>
+            <span class="ff-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10Z"/></svg></span>
+            <span><strong>No seu tempo</strong>responda com calma</span>
+          </li>
+        </ul>
+
+        <button type="button" class="btn btn-primary btn-form" data-open-form>
+          Preencher formulário
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </button>
+      </div>
+      <p class="form-alt">Prefere tirar uma dúvida antes? Fale comigo pelo <a href="https://wa.me/559284075979?text=Ol%C3%A1%2C%20L%C3%ADvia!%20Gostaria%20de%20saber%20mais%20sobre%20a%20psicoterapia." target="_blank" rel="noopener">WhatsApp</a> ou por <a href="mailto:liviabarbosa.psi@outlook.com?subject=Psicoterapia">e-mail</a>.</p>
+    </div>
+  </section>
+</div>
+
+<!-- ===== BOTÃO FLUTUANTE "Quero começar" ===== -->
+<button type="button" class="float-cta" data-open-form aria-hidden="true" tabindex="-1">
+  <span class="fc-pulse"></span>Quero começar <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+</button>
+<!-- ===== JANELA DO FORMULÁRIO (link do Google Forms fica aqui) ===== -->
+<dialog class="form-modal" id="formModal" aria-labelledby="formModalTitle">
+  <div class="fm-panel">
+    <header class="fm-head">
+      <div>
+        <span class="fm-kicker">Formulário de interesse</span>
+        <h2 id="formModalTitle">Vamos começar?</h2>
+      </div>
+      <div class="fm-actions">
+        <a class="fm-ext" href="https://forms.gle/hssr5LHr1K5q6m1W7" target="_blank" rel="noopener" title="Abrir em nova aba">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></svg>
+          <span>Nova aba</span>
+        </a>
+        <button type="button" class="fm-close" data-close-form aria-label="Fechar formulário">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg>
+        </button>
+      </div>
+    </header>
+    <div class="fm-body">
+      <div class="fm-loading" aria-hidden="true"><span></span>Carregando formulário…</div>
+      <iframe data-src="https://docs.google.com/forms/d/e/1FAIpQLSdQPEek_pxqxy49afGLAuCkja7KvcqY7UsfdRNLs_pkOea_0A/viewform?embedded=true" title="Formulário de interesse em psicoterapia"></iframe>
+    </div>
+    <p class="fm-foot">Suas respostas vão diretamente para a Lívia, Psicóloga CRP 20/14387.</p>
+  </div>
+</dialog>
+
+<!-- ===== RODAPÉ ===== -->
+<footer>
+  <div class="wrap">
+    <span>© 2026 Lívia Barbosa de Oliveira</span>
+    <span>Psicóloga, CRP 20/14387</span>
+  </div>
+</footer>
+
+<script src="js/navegacao.js"></script>
+<script src="js/formulario.js"></script>
+<script src="js/interacoes.js"></script>
+</body>
+</html>
